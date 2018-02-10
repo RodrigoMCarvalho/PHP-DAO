@@ -2,14 +2,10 @@
 
 require_once ("config.php");
 
-//Carrega uma lista de usuários
-/*$lista = Usuario::getLista();
-echo json_encode($lista);*/
-
 //Carrega um usuário por ID
-$root = new Usuario(); 
+/*$root = new Usuario(); 
 $root->loadById(3);
-echo($root) ;
+echo($root) ;*/
 
 //Realiza uma busca na tabela
 /*$busca = Usuario::search("ro");
@@ -20,8 +16,15 @@ echo json_encode($busca);*/
 $user->login("Gustavo",2014);
 echo $user;*/
 
+/*$aluno2 = new Usuario("aluno2","@#$e%");
+$aluno2->insert();
+echo $aluno2;*/
 
+$user = new Usuario();
+$user->loadById(13);
+$user->update("professor","#%Fs%");
+echo $user;
 
-/*$result = $sql->select("SELECT * FROM tb_usuarios");
-
-echo json_encode($result);*/
+//Carrega uma lista de usuários
+/*$lista = Usuario::getLista();
+echo json_encode($lista);*/
