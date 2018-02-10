@@ -16,14 +16,21 @@ echo json_encode($busca);*/
 $user->login("Gustavo",2014);
 echo $user;*/
 
-/*$aluno2 = new Usuario("aluno2","@#$e%");
-$aluno2->insert();
-echo $aluno2;*/
+/*$aluno3 = new Usuario("aluno3","@#$e%");
+$aluno3->insert();
+echo $aluno3;*/
 
-$user = new Usuario();
+/*$user = new Usuario();
 $user->loadById(13);
 $user->update("professor","#%Fs%");
+echo $user;*/
+
+$user = new Usuario();
+$user->loadById(18);
 echo $user;
+$user->delete();
+echo $user;
+
 
 //Carrega uma lista de usuários
 /*$lista = Usuario::getLista();

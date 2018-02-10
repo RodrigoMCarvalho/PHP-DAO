@@ -23,7 +23,6 @@ class Sql extends PDO {
 		$this->setParams($stmt, $params);
 		$stmt->execute();
 		return $stmt;
-
 	}
 
 	public function select($rawquery, $params = array()):array{		
